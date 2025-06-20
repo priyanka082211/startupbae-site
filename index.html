@@ -1,197 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>StartupBae | Design. Build. Systemize. Grow.</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StartupBae | Digital Launch Partner</title>
   <style>
     :root {
-      --primary: #4f46e5;
+      --primary: #6366f1;
       --secondary: #facc15;
-      --accent: #22c55e;
+      --accent: #14b8a6;
       --dark: #111827;
-      --gray: #f3f4f6;
-      --light-text: #6b7280;
+      --gray: #f9fafb;
+      --light: #ffffff;
+      --text-light: #6b7280;
     }
 
     body {
       margin: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      line-height: 1.6;
-      color: var(--dark);
       background-color: var(--gray);
+      color: var(--dark);
+      line-height: 1.6;
     }
-    .hero {
-      position: relative;
-      background: url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
-      color: #fff;
+
+    header.hero {
+      background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1581092334500-50b6c6b8a325?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+      color: var(--light);
+      padding: 100px 20px;
       text-align: center;
-      padding: 120px 20px;
     }
-    .hero::before {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background: rgba(0,0,0,0.6);
-    }
-    .hero-content {
-      position: relative;
-      z-index: 1;
-      max-width: 700px;
-      margin: auto;
-    }
-    .hero h1 {
+
+    header.hero h1 {
       font-size: 48px;
       margin-bottom: 20px;
     }
-    .hero p {
-      font-size: 18px;
+
+    header.hero p {
+      font-size: 20px;
       margin-bottom: 30px;
-      color: var(--gray);
     }
+
     .btn {
       display: inline-block;
       padding: 12px 24px;
+      font-size: 16px;
       margin: 10px;
       border: none;
-      cursor: pointer;
-      font-size: 16px;
-      border-radius: 4px;
+      border-radius: 6px;
       text-decoration: none;
+      cursor: pointer;
     }
-    .btn.primary {
-      background-color: var(--primary);
-      color: #fff;
+
+    .btn.primary { background-color: var(--primary); color: white; }
+    .btn.secondary { background-color: var(--secondary); color: black; }
+
+    section {
+      padding: 60px 20px;
+      text-align: center;
     }
-    .btn.secondary {
-      background-color: var(--secondary);
-      color: #000;
+
+    #services {
+      background: linear-gradient(rgba(255,255,255,0.95), rgba(255,255,255,0.95)), url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
     }
-#services {
-  background: 
-    linear-gradient(rgba(255,255,255,0.9), rgba(255,255,255,0.9)), 
-    url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1600&q=80') 
-    center/cover no-repeat;
-}
+
+    #why {
+      background: linear-gradient(rgba(255,255,255,0.95), rgba(255,255,255,0.95)), url('https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
     }
-    .section h2 {
-      font-size: 32px;
-      margin-bottom: 40px;
+
+    #work {
+      background: linear-gradient(rgba(255,255,255,0.96), rgba(255,255,255,0.96)), url('https://images.unsplash.com/photo-1556761175-4b46a572b786?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+    }
+
+    .section-title {
+      font-size: 36px;
       color: var(--primary);
+      margin-bottom: 40px;
     }
-    .services {
+
+    .grid {
       display: flex;
       flex-wrap: wrap;
-      gap: 30px;
       justify-content: center;
+      gap: 30px;
+      max-width: 1200px;
+      margin: 0 auto;
     }
+
     .card {
-      background: var(--gray);
+      background: white;
       padding: 30px;
+      width: 300px;
       border-radius: 10px;
-      width: 280px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
       text-align: center;
-      transition: transform 0.3s;
     }
-    .card:hover {
-      transform: translateY(-5px);
-    }
+
     .card img {
       height: 60px;
       margin-bottom: 20px;
     }
-    .card h3 {
-      color: var(--accent);
-    }
+
     .testimonials {
-      background-color: #fef3c7;
+      background: #fff7ed;
     }
+
     .testimonial {
+      font-style: italic;
       max-width: 600px;
       margin: 20px auto;
-      font-style: italic;
       color: var(--dark);
     }
+
     footer {
       background: var(--dark);
-      color: #fff;
+      color: white;
       text-align: center;
-      padding: 20px;
+      padding: 30px 20px;
     }
   </style>
 </head>
 <body>
   <header class="hero">
-    <div class="hero-content">
-      <h1>Design. Build. Systemize. Grow.</h1>
-      <p>We help startups and small teams launch fast, scale smart, and stay organized — with high-impact design, dev, and project systems.</p>
-      <a href="#work" class="btn primary">See Our Work</a>
-      <a href="#consult" class="btn secondary">Book a Free Consult</a>
-    </div>
+    <h1>Design. Build. Systemize. Grow.</h1>
+    <p>Your digital launch partner for websites, systems, and scale.</p>
+    <a href="#services" class="btn primary">See Our Work</a>
+    <a href="#contact" class="btn secondary">Let’s Talk</a>
   </header>
 
-  <section class="section" id="services">
-    <h2>What We Do</h2>
-    <div class="services">
+  <section id="services">
+    <h2 class="section-title">What We Do</h2>
+    <div class="grid">
       <div class="card">
-        <img src="https://img.icons8.com/ios-filled/100/web.png" alt="Web Dev" />
-        <h3>Web Development</h3>
-        <p>React, Webflow, WordPress custom builds.</p>
+        <img src="https://img.icons8.com/ios-filled/100/web.png" alt="Web Dev">
+        <h3>Website Development</h3>
+        <p>Custom websites built with WordPress, Webflow, or React to match your goals.</p>
       </div>
       <div class="card">
-        <img src="https://img.icons8.com/ios-filled/100/design.png" alt="Design" />
+        <img src="https://img.icons8.com/ios-filled/100/design.png" alt="Design">
         <h3>Design & Branding</h3>
-        <p>Figma, Logos, Visual Systems, Canva templates.</p>
+        <p>Visuals that sell — Figma UI/UX, brand kits, Canva templates, pitch decks.</p>
       </div>
       <div class="card">
-        <img src="https://img.icons8.com/ios-filled/100/task.png" alt="Systems" />
+        <img src="https://img.icons8.com/ios-filled/100/task.png" alt="Systems">
         <h3>Project Systems</h3>
-        <p>ClickUp, Notion, SOPs, process automation.</p>
+        <p>ClickUp, Notion, and SOP setups that organize your team and scale your ops.</p>
       </div>
     </div>
   </section>
 
-  <section class="section">
-    <h2>Why StartupBae</h2>
+  <section id="why">
+    <h2 class="section-title">Why StartupBae</h2>
     <ul style="list-style:none; padding:0; font-size:18px;">
-      <li>✅ 9+ Years Experience</li>
-      <li>✅ Startup DNA — We move fast</li>
+      <li>✅ 9+ Years Experience in Tech + Ops</li>
+      <li>✅ Startup Speed + Corporate Standards</li>
       <li>✅ Top Rated Plus on Upwork</li>
-      <li>✅ Delivered 50+ Projects Globally</li>
-      <li>✅ Flexible Team Model (PM, Dev, QA)</li>
+      <li>✅ 50+ Successful Project Deliveries</li>
+      <li>✅ PM, QA, Devs & Designers under one roof</li>
     </ul>
   </section>
 
-  <section class="section" id="work">
-    <h2>Our Work</h2>
-    <div class="services">
+  <section id="work">
+    <h2 class="section-title">Our Work</h2>
+    <div class="grid">
       <div class="card">
         <h3>FinTech SaaS Landing Page</h3>
-        <p>Designed & launched with Webflow + Figma.</p>
+        <p>Crafted for conversions in Webflow using custom animations.</p>
       </div>
       <div class="card">
-        <h3>Shopify Store</h3>
-        <p>Customized layout and product systems.</p>
+        <h3>Shopify Custom Store</h3>
+        <p>Optimized layout + upsell systems to improve AOV by 28%.</p>
       </div>
       <div class="card">
         <h3>ClickUp Setup</h3>
-        <p>Agile sprints, dashboards, client automation.</p>
+        <p>Dashboards, workflows, automations for a remote tech team.</p>
       </div>
     </div>
   </section>
 
-  <section class="section testimonials">
-    <h2>Client Testimonials</h2>
+  <section class="testimonials">
+    <h2 class="section-title">Client Testimonials</h2>
     <p class="testimonial">“StartupBae helped us go live in 3 weeks with a clean and powerful pitch deck — couldn't ask for better project guidance.” – Liam M.</p>
     <p class="testimonial">“They handled the design and development end-to-end. We simply shared our vision, and they executed perfectly.” – Parul R.</p>
-  </section>
-
-  <section class="section" id="consult">
-    <h2>Let’s Build Together</h2>
-    <p>Ready to launch something great?</p>
-    <a class="btn primary" href="#">Book a Free Consult</a>
-    <a class="btn secondary" href="#">View Packages</a>
   </section>
 
   <footer>
@@ -199,3 +188,5 @@
     <p>📧 hello@startupbae.com | 🌐 www.startupbae.com</p>
     <p>🔗 LinkedIn | Upwork | Instagram</p>
   </footer>
+</body>
+</html>
