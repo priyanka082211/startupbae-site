@@ -1,199 +1,1407 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>StartupBae | Design. Build. Systemize. Grow.</title>
-  <style>
-    :root {
-      --primary: #4f46e5;
-      --secondary: #facc15;
-      --accent: #22c55e;
-      --dark: #111827;
-      --gray: #f3f4f6;
-      --light-text: #6b7280;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StartupBae | Digital Growth, AI Automation & Web Development Agency</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="StartupBae helps startups, local businesses, coaches, and consultants scale with premium web development, GoHighLevel CRM setup, AI Voice agents, and automated workflows.">
+    <meta name="keywords" content="AI Automation, GoHighLevel, Web Development, Sales Funnels, Lead Generation, StartupBae, AI Voice Agents">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph Metadata -->
+    <meta property="og:title" content="StartupBae | Digital Growth, AI Automation & Web Development">
+    <meta property="og:description" content="We help businesses automate operations, generate high-quality leads, and scale online with premium websites, CRM systems, and AI workflows.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://startupbae.agency">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=1200&h=630&q=80">
 
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      line-height: 1.6;
-      color: var(--dark);
-      background-color: var(--gray);
+    <!-- Schema Markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "StartupBae",
+      "image": "https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=1200&h=630&q=80",
+      "url": "https://startupbae.agency",
+      "telephone": "+919740326160",
+      "priceRange": "$$",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Bengaluru",
+        "addressCountry": "IN"
+      },
+      "serviceType": [
+        "AI Automation",
+        "Web Development",
+        "GoHighLevel CRM Setup",
+        "Digital Lead Generation"
+      ]
     }
-    .hero {
-      position: relative;
-      background: url('https://source.unsplash.com/1600x800/?technology,startup') center/cover;
-      color: #fff;
-      text-align: center;
-      padding: 120px 20px;
-    }
-    .hero::before {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background: rgba(0,0,0,0.6);
-    }
-    .hero-content {
-      position: relative;
-      z-index: 1;
-      max-width: 700px;
-      margin: auto;
-    }
-    .hero h1 {
-      font-size: 48px;
-      margin-bottom: 20px;
-    }
-    .hero p {
-      font-size: 18px;
-      margin-bottom: 30px;
-      color: var(--gray);
-    }
-    .btn {
-      display: inline-block;
-      padding: 12px 24px;
-      margin: 10px;
-      border: none;
-      cursor: pointer;
-      font-size: 16px;
-      border-radius: 4px;
-      text-decoration: none;
-    }
-    .btn.primary {
-      background-color: var(--primary);
-      color: #fff;
-    }
-    .btn.secondary {
-      background-color: var(--secondary);
-      color: #000;
-    }
-    .section {
-      padding: 60px 20px;
-      text-align: center;
-      background: #fff;
-    }
-    .section h2 {
-      font-size: 32px;
-      margin-bottom: 40px;
-      color: var(--primary);
-    }
-    .services {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 30px;
-      justify-content: center;
-    }
-    .card {
-      background: var(--gray);
-      padding: 30px;
-      border-radius: 10px;
-      width: 280px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.05);
-      text-align: center;
-      transition: transform 0.3s;
-    }
-    .card:hover {
-      transform: translateY(-5px);
-    }
-    .card img {
-      height: 60px;
-      margin-bottom: 20px;
-    }
-    .card h3 {
-      color: var(--accent);
-    }
-    .testimonials {
-      background-color: #fef3c7;
-    }
-    .testimonial {
-      max-width: 600px;
-      margin: 20px auto;
-      font-style: italic;
-      color: var(--dark);
-    }
-    footer {
-      background: var(--dark);
-      color: #fff;
-      text-align: center;
-      padding: 20px;
-    }
-  </style>
+    </script>
+
+    <!-- Tailwind CSS Play CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#2563EB',
+                        secondary: '#7C3AED',
+                        accent: '#06B6D4',
+                        darkText: '#111827',
+                        lightBg: '#F9FAFB'
+                    },
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', 'Inter', sans-serif;
+            background-color: #F9FAFB;
+            color: #111827;
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #2563EB 0%, #7C3AED 50%, #06B6D4 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #2563EB 0%, #7C3AED 100%);
+        }
+        .gradient-border:hover {
+            border-image: linear-gradient(to right, #2563EB, #06B6D4) 1;
+        }
+        .active-nav-link {
+            color: #2563EB;
+            font-weight: 600;
+        }
+    </style>
 </head>
-<body>
-  <header class="hero">
-    <div class="hero-content">
-      <h1>Design. Build. Systemize. Grow.</h1>
-      <p>We help startups and small teams launch fast, scale smart, and stay organized — with high-impact design, dev, and project systems.</p>
-      <a href="#work" class="btn primary">See Our Work</a>
-      <a href="#consult" class="btn secondary">Book a Free Consult</a>
-    </div>
-  </header>
+<body class="min-h-screen flex flex-col selection:bg-blue-100 selection:text-blue-900">
 
-  <section class="section" id="services">
-    <h2>What We Do</h2>
-    <div class="services">
-      <div class="card">
-        <img src="https://img.icons8.com/ios-filled/100/web.png" alt="Web Dev" />
-        <h3>Web Development</h3>
-        <p>React, Webflow, WordPress custom builds.</p>
-      </div>
-      <div class="card">
-        <img src="https://img.icons8.com/ios-filled/100/design.png" alt="Design" />
-        <h3>Design & Branding</h3>
-        <p>Figma, Logos, Visual Systems, Canva templates.</p>
-      </div>
-      <div class="card">
-        <img src="https://img.icons8.com/ios-filled/100/task.png" alt="Systems" />
-        <h3>Project Systems</h3>
-        <p>ClickUp, Notion, SOPs, process automation.</p>
-      </div>
-    </div>
-  </section>
+    <!-- STICKY NAVIGATION -->
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-100 shadow-sm transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <!-- Logo -->
+                <div class="flex-shrink-0 flex items-center cursor-pointer" onclick="navigateTo('home')">
+                    <span class="text-2xl font-extrabold tracking-tight text-slate-900">
+                        Startup<span class="text-primary">Bae</span><span class="text-accent">.</span>
+                    </span>
+                </div>
+                
+                <!-- Desktop Navigation Links -->
+                <nav class="hidden md:flex space-x-8 text-sm font-medium text-slate-600">
+                    <a href="javascript:void(0)" onclick="navigateTo('home')" id="nav-home" class="transition hover:text-primary active-nav-link">Home</a>
+                    <a href="javascript:void(0)" onclick="navigateTo('services')" id="nav-services" class="transition hover:text-primary">Services</a>
+                    <a href="javascript:void(0)" onclick="navigateTo('portfolio')" id="nav-portfolio" class="transition hover:text-primary">Portfolio</a>
+                    <a href="javascript:void(0)" onclick="navigateTo('about')" id="nav-about" class="transition hover:text-primary">About Us</a>
+                    <a href="javascript:void(0)" onclick="navigateTo('contact')" id="nav-contact" class="transition hover:text-primary">Contact</a>
+                </nav>
 
-  <section class="section">
-    <h2>Why StartupBae</h2>
-    <ul style="list-style:none; padding:0; font-size:18px;">
-      <li>✅ 9+ Years Experience</li>
-      <li>✅ Startup DNA — We move fast</li>
-      <li>✅ Top Rated Plus on Upwork</li>
-      <li>✅ Delivered 50+ Projects Globally</li>
-      <li>✅ Flexible Team Model (PM, Dev, QA)</li>
-    </ul>
-  </section>
+                <!-- Desktop CTA Buttons -->
+                <div class="hidden md:flex items-center space-x-4">
+                    <a href="https://wa.me/919740326160" target="_blank" rel="noopener" class="flex items-center text-emerald-600 hover:text-emerald-700 transition font-medium text-sm">
+                        <i class="fab fa-whatsapp text-lg mr-2"></i> Chat Live
+                    </a>
+                    <button onclick="navigateTo('contact')" class="px-5 py-2.5 rounded-xl text-white text-sm font-semibold gradient-bg shadow-lg shadow-blue-500/20 hover:shadow-blue-500/30 transition transform hover:-translate-y-0.5">
+                        Free Consultation
+                    </button>
+                </div>
 
-  <section class="section" id="work">
-    <h2>Our Work</h2>
-    <div class="services">
-      <div class="card">
-        <h3>FinTech SaaS Landing Page</h3>
-        <p>Designed & launched with Webflow + Figma.</p>
-      </div>
-      <div class="card">
-        <h3>Shopify Store</h3>
-        <p>Customized layout and product systems.</p>
-      </div>
-      <div class="card">
-        <h3>ClickUp Setup</h3>
-        <p>Agile sprints, dashboards, client automation.</p>
-      </div>
-    </div>
-  </section>
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-slate-600 hover:text-primary focus:outline-none focus:text-primary" aria-label="Toggle Menu">
+                        <i class="fa-solid fa-bars text-2xl" id="menu-icon"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
 
-  <section class="section testimonials">
-    <h2>Client Testimonials</h2>
-    <p class="testimonial">“StartupBae helped us go live in 3 weeks with a clean and powerful pitch deck — couldn't ask for better project guidance.” – Liam M.</p>
-    <p class="testimonial">“They handled the design and development end-to-end. We simply shared our vision, and they executed perfectly.” – Parul R.</p>
-  </section>
+        <!-- Mobile Navigation Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-slate-100 transition duration-300">
+            <div class="px-4 pt-2 pb-6 space-y-3 shadow-inner">
+                <a href="javascript:void(0)" onclick="navigateTo('home')" class="block px-3 py-2.5 rounded-lg text-base font-semibold text-slate-700 hover:bg-slate-50 hover:text-primary">Home</a>
+                <a href="javascript:void(0)" onclick="navigateTo('services')" class="block px-3 py-2.5 rounded-lg text-base font-semibold text-slate-700 hover:bg-slate-50 hover:text-primary">Services</a>
+                <a href="javascript:void(0)" onclick="navigateTo('portfolio')" class="block px-3 py-2.5 rounded-lg text-base font-semibold text-slate-700 hover:bg-slate-50 hover:text-primary">Portfolio</a>
+                <a href="javascript:void(0)" onclick="navigateTo('about')" class="block px-3 py-2.5 rounded-lg text-base font-semibold text-slate-700 hover:bg-slate-50 hover:text-primary">About Us</a>
+                <a href="javascript:void(0)" onclick="navigateTo('contact')" class="block px-3 py-2.5 rounded-lg text-base font-semibold text-slate-700 hover:bg-slate-50 hover:text-primary">Contact</a>
+                <div class="pt-4 border-t border-slate-100 flex flex-col space-y-3">
+                    <a href="https://wa.me/919740326160" target="_blank" rel="noopener" class="flex items-center justify-center px-4 py-3 border border-emerald-200 rounded-xl text-emerald-700 font-semibold bg-emerald-50 hover:bg-emerald-100 transition">
+                        <i class="fab fa-whatsapp text-xl mr-2"></i> Chat on WhatsApp
+                    </a>
+                    <button onclick="navigateTo('contact')" class="w-full text-center px-4 py-3 rounded-xl text-white font-semibold gradient-bg shadow-md transition">
+                        Book a Free Consultation
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
 
-  <section class="section" id="consult">
-    <h2>Let’s Build Together</h2>
-    <p>Ready to launch something great?</p>
-    <a class="btn primary" href="#">Book a Free Consult</a>
-    <a class="btn secondary" href="#">View Packages</a>
-  </section>
+    <!-- MAIN BODY SECTIONS -->
+    <main class="flex-grow">
 
-  <footer>
-    <p>© 2025 StartupBae. All rights reserved.</p>
-    <p>📧 hello@startupbae.com | 🌐 www.startupbae.com</p>
-    <p>🔗 LinkedIn | Upwork | Instagram</p>
-  </footer>
+        <!-- ======================================================= -->
+        <!-- HOME PAGE -->
+        <!-- ======================================================= -->
+        <div id="page-home" class="page-view transition-opacity duration-300">
+            
+            <!-- Hero Section -->
+            <section class="relative bg-gradient-to-b from-white via-slate-50/50 to-white pt-10 pb-20 md:py-32 overflow-hidden">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+                        
+                        <!-- Hero Left Content -->
+                        <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                            <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-blue-50 border border-blue-100 text-blue-700 text-xs sm:text-sm font-semibold tracking-wide">
+                                <span class="flex h-2 w-2 rounded-full bg-primary animate-pulse"></span>
+                                Modern AI, Web Development & Growth Solutions
+                            </div>
+                            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-slate-900 leading-tight">
+                                Grow Faster with <span class="gradient-text">AI Automation</span>, Websites & CRM
+                            </h1>
+                            <p class="text-lg sm:text-xl text-slate-600 font-normal leading-relaxed max-w-2xl mx-auto lg:mx-0">
+                                We help startups, local businesses, coaches, and service providers automate workflows, capture qualified leads, and build high-converting web presences.
+                            </p>
+                            
+                            <!-- Hero CTA buttons -->
+                            <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-4">
+                                <button onclick="navigateTo('contact')" class="w-full sm:w-auto px-8 py-4 rounded-xl text-white text-base font-bold gradient-bg shadow-xl shadow-blue-500/20 hover:shadow-blue-500/40 transition-all transform hover:-translate-y-1">
+                                    Book a Free Consultation
+                                </button>
+                                <button onclick="navigateTo('services')" class="w-full sm:w-auto px-8 py-4 rounded-xl text-slate-700 bg-white border border-slate-200 hover:border-slate-300 font-bold text-base transition hover:bg-slate-50 flex items-center justify-center gap-2">
+                                    View Our Services <i class="fa-solid fa-arrow-right text-sm"></i>
+                                </button>
+                            </div>
+
+                            <!-- Trust Indicators & Social Proof -->
+                            <div class="pt-8 border-t border-slate-100 grid grid-cols-3 gap-4 max-w-lg mx-auto lg:mx-0">
+                                <div>
+                                    <p class="text-2xl sm:text-3xl font-extrabold text-slate-900">120+</p>
+                                    <p class="text-xs text-slate-500 uppercase tracking-wider font-semibold">Projects Launched</p>
+                                </div>
+                                <div>
+                                    <p class="text-2xl sm:text-3xl font-extrabold text-slate-900">45k+</p>
+                                    <p class="text-xs text-slate-500 uppercase tracking-wider font-semibold">Hours Automated</p>
+                                </div>
+                                <div>
+                                    <p class="text-2xl sm:text-3xl font-extrabold text-slate-900">99%</p>
+                                    <p class="text-xs text-slate-500 uppercase tracking-wider font-semibold">Client Retention</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Hero Right Graphic Mockup -->
+                        <div class="lg:col-span-5 relative flex justify-center">
+                            <div class="relative w-full max-w-md lg:max-w-none">
+                                <div class="absolute -inset-1 rounded-3xl bg-gradient-to-r from-blue-500 to-violet-500 opacity-20 blur-2xl"></div>
+                                <div class="relative bg-white border border-slate-100 rounded-3xl shadow-2xl overflow-hidden p-6 sm:p-8">
+                                    <!-- Interactive mini UI concept inside mockup -->
+                                    <div class="flex items-center justify-between border-b border-slate-100 pb-4 mb-4">
+                                        <div class="flex items-center gap-2">
+                                            <span class="w-3 h-3 rounded-full bg-red-400"></span>
+                                            <span class="w-3 h-3 rounded-full bg-yellow-400"></span>
+                                            <span class="w-3 h-3 rounded-full bg-green-400"></span>
+                                        </div>
+                                        <span class="text-xs font-semibold text-slate-400 bg-slate-50 px-2 py-1 rounded-md">startupbae.agency/dashboard</span>
+                                    </div>
+                                    <div class="space-y-4">
+                                        <div class="p-4 bg-blue-50/60 rounded-xl border border-blue-100/40">
+                                            <p class="text-xs text-blue-600 font-bold uppercase tracking-wide">Automated Pipeline Activated</p>
+                                            <div class="flex justify-between items-center mt-2">
+                                                <h4 class="font-extrabold text-slate-800 text-lg">Lead Funnel Sync</h4>
+                                                <span class="text-xs text-emerald-600 font-bold bg-emerald-100 px-2.5 py-0.5 rounded-full"><i class="fa-solid fa-check mr-1"></i> Running</span>
+                                            </div>
+                                        </div>
+                                        <div class="p-4 bg-violet-50/60 rounded-xl border border-violet-100/40">
+                                            <p class="text-xs text-violet-600 font-bold uppercase tracking-wide">AI Chatbot Agent</p>
+                                            <div class="flex items-center gap-3 mt-2 text-slate-700 text-sm">
+                                                <i class="fa-solid fa-robot text-violet-600 text-lg"></i>
+                                                <p class="italic">"Qualified 24 leads & scheduled 5 discovery calls today"</p>
+                                            </div>
+                                        </div>
+                                        <div class="flex items-center justify-between gap-4 pt-2">
+                                            <div class="w-1/2 p-3 bg-slate-50 rounded-xl text-center border border-slate-100">
+                                                <p class="text-xs text-slate-500">GoHighLevel Integrations</p>
+                                                <p class="text-base font-extrabold text-slate-800">100% Synced</p>
+                                            </div>
+                                            <div class="w-1/2 p-3 bg-slate-50 rounded-xl text-center border border-slate-100">
+                                                <p class="text-xs text-slate-500">Page Load speed</p>
+                                                <p class="text-base font-extrabold text-emerald-600">0.4s (A+)</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 1: Trusted Growth Partner -->
+            <section class="py-20 bg-white border-y border-slate-100">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="text-center max-w-3xl mx-auto mb-16">
+                        <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight text-slate-900">
+                            Your Dedicated Growth Engine
+                        </h2>
+                        <p class="mt-4 text-lg text-slate-600">
+                            We don't just build websites or set up arbitrary tools. StartupBae helps local enterprises and modern organizations implement full-funnel engines that capture, nurture, and close leads on autopilot.
+                        </p>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                        <div class="p-8 bg-slate-50/60 rounded-2xl border border-slate-100 hover:shadow-xl hover:bg-white transition duration-300">
+                            <div class="w-12 h-12 rounded-xl gradient-bg flex items-center justify-center text-white text-xl font-bold mb-6">
+                                <i class="fa-solid fa-chart-line"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-slate-900 mb-3">Maximize Systemic Sales</h3>
+                            <p class="text-slate-600 leading-relaxed text-sm sm:text-base">
+                                Eliminate manual copy-pasting of leads. We link your landing pages directly to automated nurturing sequences, pushing conversion rates up.
+                            </p>
+                        </div>
+                        <div class="p-8 bg-slate-50/60 rounded-2xl border border-slate-100 hover:shadow-xl hover:bg-white transition duration-300">
+                            <div class="w-12 h-12 rounded-xl bg-accent flex items-center justify-center text-white text-xl font-bold mb-6">
+                                <i class="fa-solid fa-clock-rotate-left"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-slate-900 mb-3">Time Back in Your Hands</h3>
+                            <p class="text-slate-600 leading-relaxed text-sm sm:text-base">
+                                Automate repetitive booking inquiries, initial message follow-ups, and calendar invitations. Save over 30 hours of labor per employee each week.
+                            </p>
+                        </div>
+                        <div class="p-8 bg-slate-50/60 rounded-2xl border border-slate-100 hover:shadow-xl hover:bg-white transition duration-300">
+                            <div class="w-12 h-12 rounded-xl bg-violet-600 flex items-center justify-center text-white text-xl font-bold mb-6">
+                                <i class="fa-solid fa-sliders"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-slate-900 mb-3">Scalable CRM Architecture</h3>
+                            <p class="text-slate-600 leading-relaxed text-sm sm:text-base">
+                                Leverage high-performance ecosystems like GoHighLevel. Access tailored pipelines, automatic SMS notifications, and user-friendly call logs.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 2: Services Overview -->
+            <section class="py-20 bg-slate-50/30">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+                        <div>
+                            <p class="text-xs font-bold uppercase tracking-wider text-primary">Comprehensive Offerings</p>
+                            <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-2">What We Build For Our Partners</h2>
+                        </div>
+                        <button onclick="navigateTo('services')" class="mt-4 md:mt-0 text-sm font-bold text-primary hover:text-blue-700 flex items-center gap-2">
+                            Explore Detailed Services <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                        <!-- Card 1 -->
+                        <div class="bg-white p-6 rounded-2xl border border-slate-100 hover:shadow-xl transition duration-300 flex flex-col justify-between">
+                            <div>
+                                <div class="text-primary bg-blue-50 w-12 h-12 rounded-xl flex items-center justify-center mb-6 text-xl">
+                                    <i class="fa-solid fa-laptop-code"></i>
+                                </div>
+                                <h3 class="text-lg font-bold text-slate-900 mb-2">Web Development</h3>
+                                <p class="text-slate-600 text-sm leading-relaxed">
+                                    Stunning custom business websites, high-converting landing pages, and automated funnels that load in milliseconds.
+                                </p>
+                            </div>
+                            <span class="mt-6 text-xs text-primary font-bold inline-flex items-center gap-1 cursor-pointer" onclick="navigateTo('services')">Learn More <i class="fa-solid fa-chevron-right text-[10px]"></i></span>
+                        </div>
+                        <!-- Card 2 -->
+                        <div class="bg-white p-6 rounded-2xl border border-slate-100 hover:shadow-xl transition duration-300 flex flex-col justify-between">
+                            <div>
+                                <div class="text-violet-600 bg-violet-50 w-12 h-12 rounded-xl flex items-center justify-center mb-6 text-xl">
+                                    <i class="fa-solid fa-gears"></i>
+                                </div>
+                                <h3 class="text-lg font-bold text-slate-900 mb-2">CRM & Automation</h3>
+                                <p class="text-slate-600 text-sm leading-relaxed">
+                                    Complete GoHighLevel CRM setup, active pipeline management, appointment calendars, and automated lead nurturing sequence flows.
+                                </p>
+                            </div>
+                            <span class="mt-6 text-xs text-violet-600 font-bold inline-flex items-center gap-1 cursor-pointer" onclick="navigateTo('services')">Learn More <i class="fa-solid fa-chevron-right text-[10px]"></i></span>
+                        </div>
+                        <!-- Card 3 -->
+                        <div class="bg-white p-6 rounded-2xl border border-slate-100 hover:shadow-xl transition duration-300 flex flex-col justify-between">
+                            <div>
+                                <div class="text-accent bg-cyan-50 w-12 h-12 rounded-xl flex items-center justify-center mb-6 text-xl">
+                                    <i class="fa-solid fa-robot"></i>
+                                </div>
+                                <h3 class="text-lg font-bold text-slate-900 mb-2">AI Solutions</h3>
+                                <p class="text-slate-600 text-sm leading-relaxed">
+                                    Conversational AI chatbots, qualified voice agents, automated booking bots, and customer support intelligence routing.
+                                </p>
+                            </div>
+                            <span class="mt-6 text-xs text-accent font-bold inline-flex items-center gap-1 cursor-pointer" onclick="navigateTo('services')">Learn More <i class="fa-solid fa-chevron-right text-[10px]"></i></span>
+                        </div>
+                        <!-- Card 4 -->
+                        <div class="bg-white p-6 rounded-2xl border border-slate-100 hover:shadow-xl transition duration-300 flex flex-col justify-between">
+                            <div>
+                                <div class="text-emerald-600 bg-emerald-50 w-12 h-12 rounded-xl flex items-center justify-center mb-6 text-xl">
+                                    <i class="fa-solid fa-magnifying-glass-chart"></i>
+                                </div>
+                                <h3 class="text-lg font-bold text-slate-900 mb-2">Digital Growth</h3>
+                                <p class="text-slate-600 text-sm leading-relaxed">
+                                    Data-driven digital marketing campaigns, target landing page marketing, CRM email broadcasting, and organic acquisition funnels.
+                                </p>
+                            </div>
+                            <span class="mt-6 text-xs text-emerald-600 font-bold inline-flex items-center gap-1 cursor-pointer" onclick="navigateTo('services')">Learn More <i class="fa-solid fa-chevron-right text-[10px]"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 3: Why Choose StartupBae -->
+            <section class="py-20 bg-white">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                        <div class="lg:col-span-5 space-y-6">
+                            <p class="text-xs font-bold uppercase tracking-wider text-primary">Uncompromising Quality</p>
+                            <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900">Why Modern Brands Work with StartupBae</h2>
+                            <p class="text-slate-600 leading-relaxed">
+                                We bypass standard design limitations and technical bottlenecks to build scalable business architectures. We are dynamic digital transformation partners focused on real operational and revenue numbers.
+                            </p>
+                            
+                            <div class="space-y-4 pt-4">
+                                <div class="flex items-start gap-3">
+                                    <div class="mt-1 flex-shrink-0 w-6 h-6 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center text-xs">
+                                        <i class="fa-solid fa-check"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold text-slate-900">Guaranteed Fast Turnaround</h4>
+                                        <p class="text-slate-600 text-sm">Most web developments and custom automation pipelines go live in under 21 business days.</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start gap-3">
+                                    <div class="mt-1 flex-shrink-0 w-6 h-6 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center text-xs">
+                                        <i class="fa-solid fa-check"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold text-slate-900">Deep Automation Core Systems</h4>
+                                        <p class="text-slate-600 text-sm">Our expert technicians have certified experience setting up GoHighLevel CRM workflows, API calls, and Webhooks.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Side stats graphic layout -->
+                        <div class="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-6">
+                            <div class="p-6 bg-slate-50 rounded-2xl border border-slate-100 space-y-2">
+                                <div class="text-xl text-primary"><i class="fa-solid fa-square-poll-vertical"></i></div>
+                                <h4 class="font-bold text-slate-900">Result-Driven Metrics</h4>
+                                <p class="text-xs sm:text-sm text-slate-500">Every design element, call to action, and form layout is positioned to improve metrics and landing conversions.</p>
+                            </div>
+                            <div class="p-6 bg-slate-50 rounded-2xl border border-slate-100 space-y-2">
+                                <div class="text-xl text-violet-600"><i class="fa-solid fa-tag"></i></div>
+                                <h4 class="font-bold text-slate-900">No Retainer Bloat</h4>
+                                <p class="text-xs sm:text-sm text-slate-500">We offer highly transparent, project-based pricing frameworks suited for standard budgets without surprise maintenance invoices.</p>
+                            </div>
+                            <div class="p-6 bg-slate-50 rounded-2xl border border-slate-100 space-y-2">
+                                <div class="text-xl text-accent"><i class="fa-solid fa-users"></i></div>
+                                <h4 class="font-bold text-slate-900">Dedicated Launch Managers</h4>
+                                <p class="text-xs sm:text-sm text-slate-500">You will work directly with a senior system engineer throughout development and during launch phases.</p>
+                            </div>
+                            <div class="p-6 bg-slate-50 rounded-2xl border border-slate-100 space-y-2">
+                                <div class="text-xl text-pink-500"><i class="fa-solid fa-rocket"></i></div>
+                                <h4 class="font-bold text-slate-900">True Future-Proof AI</h4>
+                                <p class="text-xs sm:text-sm text-slate-500">Our deep familiarity with modern LLM fine-tuning, audio parsing, and text models keeps your client interactions highly natural.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 4: Our Process -->
+            <section class="py-20 bg-slate-50/50 border-y border-slate-100">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="text-center max-w-2xl mx-auto mb-16">
+                        <p class="text-xs font-bold uppercase tracking-wider text-primary">Strategic Framework</p>
+                        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-2">How We Deliver Results</h2>
+                        <p class="mt-4 text-slate-600">
+                            Our structured 4-step deployment cycle keeps project timelines tight and minimizes communication overhead.
+                        </p>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-4 gap-8 relative">
+                        <!-- Step 1 -->
+                        <div class="relative flex flex-col items-center text-center group">
+                            <div class="w-16 h-16 rounded-2xl bg-white border border-slate-100 shadow-md group-hover:shadow-lg transition flex items-center justify-center text-2xl font-black text-primary mb-6">
+                                01
+                            </div>
+                            <h3 class="text-lg font-bold text-slate-900 mb-2">Discover</h3>
+                            <p class="text-slate-500 text-sm px-4">We audit your existing lead capture strategies, technology stack bottlenecks, and operational targets.</p>
+                        </div>
+                        <!-- Step 2 -->
+                        <div class="relative flex flex-col items-center text-center group">
+                            <div class="w-16 h-16 rounded-2xl bg-white border border-slate-100 shadow-md group-hover:shadow-lg transition flex items-center justify-center text-2xl font-black text-secondary mb-6">
+                                02
+                            </div>
+                            <h3 class="text-lg font-bold text-slate-900 mb-2">Build</h3>
+                            <p class="text-slate-500 text-sm px-4">Our developers write responsive web layouts, configure GoHighLevel databases, and program system logic.</p>
+                        </div>
+                        <!-- Step 3 -->
+                        <div class="relative flex flex-col items-center text-center group">
+                            <div class="w-16 h-16 rounded-2xl bg-white border border-slate-100 shadow-md group-hover:shadow-lg transition flex items-center justify-center text-2xl font-black text-accent mb-6">
+                                03
+                            </div>
+                            <h3 class="text-lg font-bold text-slate-900 mb-2">Automate</h3>
+                            <p class="text-slate-500 text-sm px-4">We setup automated workflows, install custom API endpoints, connect your booking portals, and test CRM pipelines.</p>
+                        </div>
+                        <!-- Step 4 -->
+                        <div class="relative flex flex-col items-center text-center group">
+                            <div class="w-16 h-16 rounded-2xl bg-white border border-slate-100 shadow-md group-hover:shadow-lg transition flex items-center justify-center text-2xl font-black text-emerald-500 mb-6">
+                                04
+                            </div>
+                            <h3 class="text-lg font-bold text-slate-900 mb-2">Scale</h3>
+                            <p class="text-slate-500 text-sm px-4">With data and notifications working perfectly, we hand over management dashboards and watch active revenue grow.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Interactive Widget: ROI & Automation Savings Calculator -->
+            <section class="py-20 bg-white">
+                <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="bg-gradient-to-br from-slate-900 via-slate-800 to-indigo-950 rounded-3xl p-8 sm:p-12 text-white shadow-2xl relative overflow-hidden">
+                        <div class="absolute top-0 right-0 w-64 h-64 bg-primary/10 rounded-full blur-3xl pointer-events-none"></div>
+                        <div class="relative z-10 text-center max-w-2xl mx-auto mb-8">
+                            <span class="text-xs font-bold uppercase tracking-wider text-accent">Automation ROI Estimator</span>
+                            <h2 class="text-2xl sm:text-3xl font-extrabold mt-2">Calculate Your Weekly Resource Savings</h2>
+                            <p class="text-slate-400 text-sm mt-1">Adjust the sliders below to estimate automated cost optimizations with StartupBae.</p>
+                        </div>
+
+                        <div class="relative z-10 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                            <!-- Input controls -->
+                            <div class="space-y-6">
+                                <div>
+                                    <label class="block text-xs font-bold uppercase text-slate-300 mb-2">Team Size handling manual bookings / calls:</label>
+                                    <input type="range" min="1" max="15" value="4" id="team-slider" class="w-full accent-accent bg-slate-700 h-2 rounded-lg cursor-pointer" oninput="updateCalculator()">
+                                    <div class="flex justify-between text-xs text-slate-400 mt-1">
+                                        <span>1 person</span>
+                                        <span class="font-bold text-white"><span id="team-value">4</span> People</span>
+                                        <span>15 people</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-bold uppercase text-slate-300 mb-2">Est. Average Hourly Labor Cost (USD):</label>
+                                    <input type="range" min="15" max="120" value="30" id="wage-slider" class="w-full accent-accent bg-slate-700 h-2 rounded-lg cursor-pointer" oninput="updateCalculator()">
+                                    <div class="flex justify-between text-xs text-slate-400 mt-1">
+                                        <span>$15/hr</span>
+                                        <span class="font-bold text-white">$<span id="wage-value">30</span>/hr</span>
+                                        <span>$120/hr</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Result Box -->
+                            <div class="bg-white/5 border border-white/10 rounded-2xl p-6 text-center space-y-4">
+                                <div>
+                                    <p class="text-xs text-slate-400 font-bold uppercase">Estimated Hours Saved / Month</p>
+                                    <p class="text-4xl sm:text-5xl font-extrabold text-accent mt-1"><span id="calc-hours">160</span> Hrs</p>
+                                </div>
+                                <div class="border-t border-white/10 pt-4">
+                                    <p class="text-xs text-slate-400 font-bold uppercase">Estimated Monthly Savings</p>
+                                    <p class="text-3xl font-extrabold text-emerald-400 mt-1">$<span id="calc-savings">4,800</span></p>
+                                </div>
+                                <button onclick="navigateTo('contact')" class="w-full py-3 bg-accent text-slate-900 hover:bg-cyan-400 font-bold text-sm rounded-xl transition duration-200">
+                                    Automate My Team
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 5: Portfolio Showcase (Brief Overview) -->
+            <section class="py-20 bg-slate-50/50 border-t border-slate-100">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+                        <div>
+                            <p class="text-xs font-bold uppercase tracking-wider text-primary">Case Studies</p>
+                            <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-2">Latest Project Highlights</h2>
+                        </div>
+                        <button onclick="navigateTo('portfolio')" class="mt-4 md:mt-0 text-sm font-bold text-primary hover:text-blue-700 flex items-center gap-2">
+                            Browse All 6 Case Studies <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                        <!-- Card 1 -->
+                        <div class="bg-white rounded-2xl overflow-hidden border border-slate-100 shadow-sm hover:shadow-xl transition duration-300">
+                            <div class="h-48 bg-slate-200 relative overflow-hidden flex items-center justify-center">
+                                <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80')"></div>
+                                <span class="absolute top-4 left-4 text-xs font-bold uppercase bg-primary text-white px-2.5 py-1 rounded-md">Web Development</span>
+                            </div>
+                            <div class="p-6">
+                                <h3 class="text-lg font-bold text-slate-900 mb-2">Local Service Business Website</h3>
+                                <p class="text-slate-600 text-sm line-clamp-2">Complete platform rebuild featuring customized conversion elements and visual speed optimization.</p>
+                                <div class="flex flex-wrap gap-2 mt-4">
+                                    <span class="text-[11px] font-semibold text-slate-600 bg-slate-100 px-2 py-0.5 rounded-md">Next.js</span>
+                                    <span class="text-[11px] font-semibold text-slate-600 bg-slate-100 px-2 py-0.5 rounded-md">Tailwind</span>
+                                    <span class="text-[11px] font-semibold text-slate-600 bg-slate-100 px-2 py-0.5 rounded-md">Alpine</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Card 2 -->
+                        <div class="bg-white rounded-2xl overflow-hidden border border-slate-100 shadow-sm hover:shadow-xl transition duration-300">
+                            <div class="h-48 bg-slate-200 relative overflow-hidden flex items-center justify-center">
+                                <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1531746790731-6c087fecd37e?auto=format&fit=crop&w=800&q=80')"></div>
+                                <span class="absolute top-4 left-4 text-xs font-bold uppercase bg-violet-600 text-white px-2.5 py-1 rounded-md">AI Integration</span>
+                            </div>
+                            <div class="p-6">
+                                <h3 class="text-lg font-bold text-slate-900 mb-2">Automated AI Voice Agent Setup</h3>
+                                <p class="text-slate-600 text-sm line-clamp-2">Real-time scheduling voicebot trained on localized service operations data.</p>
+                                <div class="flex flex-wrap gap-2 mt-4">
+                                    <span class="text-[11px] font-semibold text-slate-600 bg-slate-100 px-2 py-0.5 rounded-md">Vapi AI</span>
+                                    <span class="text-[11px] font-semibold text-slate-600 bg-slate-100 px-2 py-0.5 rounded-md">Make.com</span>
+                                    <span class="text-[11px] font-semibold text-slate-600 bg-slate-100 px-2 py-0.5 rounded-md">Twilio</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Card 3 -->
+                        <div class="bg-white rounded-2xl overflow-hidden border border-slate-100 shadow-sm hover:shadow-xl transition duration-300">
+                            <div class="h-48 bg-slate-200 relative overflow-hidden flex items-center justify-center">
+                                <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1552581230-2646d2980b5f?auto=format&fit=crop&w=800&q=80')"></div>
+                                <span class="absolute top-4 left-4 text-xs font-bold uppercase bg-accent text-slate-900 px-2.5 py-1 rounded-md">CRM setup</span>
+                            </div>
+                            <div class="p-6">
+                                <h3 class="text-lg font-bold text-slate-900 mb-2">GoHighLevel CRM Deployment</h3>
+                                <p class="text-slate-600 text-sm line-clamp-2">Unified operational portal connecting social triggers, calendar configurations, and SMS.</p>
+                                <div class="flex flex-wrap gap-2 mt-4">
+                                    <span class="text-[11px] font-semibold text-slate-600 bg-slate-100 px-2 py-0.5 rounded-md">GoHighLevel</span>
+                                    <span class="text-[11px] font-semibold text-slate-600 bg-slate-100 px-2 py-0.5 rounded-md">Zapier</span>
+                                    <span class="text-[11px] font-semibold text-slate-600 bg-slate-100 px-2 py-0.5 rounded-md">Mailgun</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 6: Testimonials -->
+            <section class="py-20 bg-white">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="text-center max-w-2xl mx-auto mb-16">
+                        <p class="text-xs font-bold uppercase tracking-wider text-primary">Proven Client Success</p>
+                        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-2">Validated Experience</h2>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                        <!-- Testimonial 1 -->
+                        <div class="p-8 bg-slate-50/50 rounded-2xl border border-slate-100 relative">
+                            <div class="text-amber-400 flex gap-1 text-sm mb-4">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="text-slate-600 text-sm sm:text-base italic leading-relaxed mb-6">
+                                "StartupBae revamped our service landing page and configured our GoHighLevel workflows. Our sales booking conversion rate jumped from 3% to 11.4% in less than 30 days."
+                            </p>
+                            <div class="flex items-center gap-3">
+                                <div class="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center text-primary font-bold text-xs">SM</div>
+                                <div>
+                                    <h4 class="text-sm font-bold text-slate-900">Siddharth Mehta</h4>
+                                    <p class="text-xs text-slate-500">Founder, Elite Wealth Partners</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Testimonial 2 -->
+                        <div class="p-8 bg-slate-50/50 rounded-2xl border border-slate-100 relative">
+                            <div class="text-amber-400 flex gap-1 text-sm mb-4">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="text-slate-600 text-sm sm:text-base italic leading-relaxed mb-6">
+                                "Our operation team spent hours qualifying cold web traffic. StartupBae programmed an interactive voice and support bot that saves us thousands of dollars every month."
+                            </p>
+                            <div class="flex items-center gap-3">
+                                <div class="w-10 h-10 rounded-full bg-violet-100 flex items-center justify-center text-violet-600 font-bold text-xs">AB</div>
+                                <div>
+                                    <h4 class="text-sm font-bold text-slate-900">Alisha Benson</h4>
+                                    <p class="text-xs text-slate-500">COO, Scale Consulting Group</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Testimonial 3 -->
+                        <div class="p-8 bg-slate-50/50 rounded-2xl border border-slate-100 relative">
+                            <div class="text-amber-400 flex gap-1 text-sm mb-4">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="text-slate-600 text-sm sm:text-base italic leading-relaxed mb-6">
+                                "They delivered a beautiful custom React site alongside an automated lead funnel system in weeks. Their transparency and technical approach are top-notch."
+                            </p>
+                            <div class="flex items-center gap-3">
+                                <div class="w-10 h-10 rounded-full bg-cyan-100 flex items-center justify-center text-accent font-bold text-xs">JK</div>
+                                <div>
+                                    <h4 class="text-sm font-bold text-slate-900">Jason K.</h4>
+                                    <p class="text-xs text-slate-500">Director, Apex Local Services</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 7: FAQ Section -->
+            <section class="py-20 bg-slate-50/30 border-t border-slate-100">
+                <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="text-center mb-16">
+                        <h2 class="text-3xl font-extrabold text-slate-900">Frequently Asked Questions</h2>
+                        <p class="mt-4 text-slate-600">Got questions about working with StartupBae? Find quick answers below.</p>
+                    </div>
+
+                    <div class="space-y-4">
+                        <!-- FAQ 1 -->
+                        <div class="bg-white rounded-xl border border-slate-100 overflow-hidden shadow-sm">
+                            <button class="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-slate-50/50 transition duration-150" onclick="toggleFaq('faq-1')">
+                                <span class="font-bold text-slate-900 text-sm sm:text-base">How long does an average development or automation project take?</span>
+                                <i class="fa-solid fa-chevron-down text-slate-400 transition" id="faq-icon-faq-1"></i>
+                            </button>
+                            <div id="faq-1" class="hidden px-6 pb-5 text-slate-600 text-sm sm:text-base leading-relaxed border-t border-slate-50 pt-4">
+                                Standard informational and business landing layouts are fully deployed in 14 to 21 business days. Deep GoHighLevel workflows and custom-trained conversational AI agent integration systems take 21 to 35 business days.
+                            </div>
+                        </div>
+                        <!-- FAQ 2 -->
+                        <div class="bg-white rounded-xl border border-slate-100 overflow-hidden shadow-sm">
+                            <button class="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-slate-50/50 transition duration-150" onclick="toggleFaq('faq-2')">
+                                <span class="font-bold text-slate-900 text-sm sm:text-base">Do you work with international clients outside of India?</span>
+                                <i class="fa-solid fa-chevron-down text-slate-400 transition" id="faq-icon-faq-2"></i>
+                            </button>
+                            <div id="faq-2" class="hidden px-6 pb-5 text-slate-600 text-sm sm:text-base leading-relaxed border-t border-slate-50 pt-4">
+                                Yes. StartupBae operates globally, using asynchronous development portals, automated progress videos, and online meetings to manage projects in the United States, Europe, UAE, and APAC regions.
+                            </div>
+                        </div>
+                        <!-- FAQ 3 -->
+                        <div class="bg-white rounded-xl border border-slate-100 overflow-hidden shadow-sm">
+                            <button class="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-slate-50/50 transition duration-150" onclick="toggleFaq('faq-3')">
+                                <span class="font-bold text-slate-900 text-sm sm:text-base">Do you provide maintenance and operational support after deployment?</span>
+                                <i class="fa-solid fa-chevron-down text-slate-400 transition" id="faq-icon-faq-3"></i>
+                            </button>
+                            <div id="faq-3" class="hidden px-6 pb-5 text-slate-600 text-sm sm:text-base leading-relaxed border-t border-slate-50 pt-4">
+                                Absolutely. Every system we launch includes 30 days of comprehensive technical monitoring, bug resolution, and live system optimizations. Beyond that, we offer flat-rate maintenance plans to adapt your automations as you scale.
+                            </div>
+                        </div>
+                        <!-- FAQ 4 -->
+                        <div class="bg-white rounded-xl border border-slate-100 overflow-hidden shadow-sm">
+                            <button class="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-slate-50/50 transition duration-150" onclick="toggleFaq('faq-4')">
+                                <span class="font-bold text-slate-900 text-sm sm:text-base">Can you automate my existing business systems without rebuilding them?</span>
+                                <i class="fa-solid fa-chevron-down text-slate-400 transition" id="faq-icon-faq-4"></i>
+                            </button>
+                            <div id="faq-4" class="hidden px-6 pb-5 text-slate-600 text-sm sm:text-base leading-relaxed border-t border-slate-50 pt-4">
+                                Yes. We specialize in using modern integrations, webhook configurations, and systems like Make.com, Zapier, and custom code blocks to sync your legacy databases, CRM platforms, and scheduling flows smoothly.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 8: Final CTA Section -->
+            <section class="py-20 bg-white">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="gradient-bg rounded-3xl p-8 sm:p-16 text-center text-white relative overflow-hidden shadow-2xl shadow-blue-500/10">
+                        <div class="absolute -top-12 -left-12 w-64 h-64 bg-white/5 rounded-full blur-2xl"></div>
+                        <div class="absolute -bottom-12 -right-12 w-64 h-64 bg-accent/20 rounded-full blur-2xl"></div>
+                        
+                        <div class="relative z-10 max-w-3xl mx-auto space-y-6">
+                            <h2 class="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight">Ready to Scale Your Business?</h2>
+                            <p class="text-lg text-blue-100 max-w-xl mx-auto leading-relaxed">
+                                Get a custom roadmap on how web development, lead nurturing pipelines, and smart AI agents can drive your growth.
+                            </p>
+                            <div class="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
+                                <button onclick="navigateTo('contact')" class="w-full sm:w-auto px-8 py-4 bg-white text-primary hover:bg-slate-50 font-extrabold text-base rounded-xl transition shadow-lg shadow-black/5 transform hover:-translate-y-0.5">
+                                    Book a Free Strategy Call
+                                </button>
+                                <a href="https://wa.me/919740326160" target="_blank" rel="noopener" class="w-full sm:w-auto px-8 py-4 border border-white/30 hover:border-white/60 bg-white/5 font-extrabold text-base rounded-xl transition flex items-center justify-center gap-2">
+                                    <i class="fab fa-whatsapp text-xl"></i> Chat on WhatsApp
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+
+        <!-- ======================================================= -->
+        <!-- SERVICES PAGE -->
+        <!-- ======================================================= -->
+        <div id="page-services" class="page-view hidden transition-opacity duration-300">
+            <section class="py-20 bg-gradient-to-b from-white to-slate-50/50">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    
+                    <div class="text-center max-w-3xl mx-auto mb-20">
+                        <p class="text-xs font-bold uppercase tracking-wider text-primary">Core Competencies</p>
+                        <h1 class="text-4xl sm:text-5xl font-extrabold tracking-tight text-slate-900 mt-2">Scale Operations with Our Service Ecosystem</h1>
+                        <p class="mt-4 text-slate-600">Tailored technical services configured specifically for your growth, pipeline optimization, and lead acquisition.</p>
+                    </div>
+
+                    <div class="space-y-20">
+                        <!-- Website Development Detail -->
+                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                            <div class="space-y-6">
+                                <div class="w-12 h-12 rounded-xl bg-blue-50 text-primary flex items-center justify-center text-xl font-bold">
+                                    <i class="fa-solid fa-code"></i>
+                                </div>
+                                <h2 class="text-3xl font-extrabold text-slate-900">Premium Web Development</h2>
+                                <p class="text-slate-600 leading-relaxed text-sm sm:text-base">
+                                    We design and build bespoke, responsive web platforms that deliver ultra-fast page speeds and direct conversion points.
+                                </p>
+                                <ul class="space-y-3">
+                                    <li class="flex items-center gap-2 text-slate-700 font-medium text-sm sm:text-base">
+                                        <i class="fa-solid fa-circle-check text-primary text-sm"></i> <b>Business Websites:</b> Clean corporate structures showcasing credentials.
+                                    </li>
+                                    <li class="flex items-center gap-2 text-slate-700 font-medium text-sm sm:text-base">
+                                        <i class="fa-solid fa-circle-check text-primary text-sm"></i> <b>Landing Pages:</b> Dynamic campaign designs configured to convert.
+                                    </li>
+                                    <li class="flex items-center gap-2 text-slate-700 font-medium text-sm sm:text-base">
+                                        <i class="fa-solid fa-circle-check text-primary text-sm"></i> <b>Sales Funnels:</b> High-performance multistep lead acquisition flows.
+                                    </li>
+                                    <li class="flex items-center gap-2 text-slate-700 font-medium text-sm sm:text-base">
+                                        <i class="fa-solid fa-circle-check text-primary text-sm"></i> <b>Maintenance:</b> Ongoing operational optimizations and SEO tune-ups.
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="bg-white p-8 rounded-3xl border border-slate-100 shadow-xl space-y-6">
+                                <h3 class="text-xl font-extrabold text-slate-900">What's Included:</h3>
+                                <div class="grid grid-cols-2 gap-4">
+                                    <div class="p-4 bg-slate-50 rounded-xl text-center">
+                                        <p class="font-extrabold text-slate-900">0.4s - 0.8s</p>
+                                        <p class="text-[11px] text-slate-500 uppercase mt-0.5">Average Load Speed</p>
+                                    </div>
+                                    <div class="p-4 bg-slate-50 rounded-xl text-center">
+                                        <p class="font-extrabold text-slate-900">100%</p>
+                                        <p class="text-[11px] text-slate-500 uppercase mt-0.5">Mobile Responsive</p>
+                                    </div>
+                                    <div class="p-4 bg-slate-50 rounded-xl text-center">
+                                        <p class="font-extrabold text-slate-900">Included</p>
+                                        <p class="text-[11px] text-slate-500 uppercase mt-0.5">Basic SEO Schema</p>
+                                    </div>
+                                    <div class="p-4 bg-slate-50 rounded-xl text-center">
+                                        <p class="font-extrabold text-slate-900">Custom</p>
+                                        <p class="text-[11px] text-slate-500 uppercase mt-0.5">Figma UI Blueprint</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CRM & Automation Detail -->
+                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center lg:flex-row-reverse">
+                            <div class="lg:order-2 space-y-6">
+                                <div class="w-12 h-12 rounded-xl bg-violet-50 text-violet-600 flex items-center justify-center text-xl font-bold">
+                                    <i class="fa-solid fa-arrows-spin"></i>
+                                </div>
+                                <h2 class="text-3xl font-extrabold text-slate-900">CRM Setup & Workflow Automation</h2>
+                                <p class="text-slate-600 leading-relaxed text-sm sm:text-base">
+                                    Automate routine follow-ups, sync databases, and manage opportunities inside unified portals like GoHighLevel.
+                                </p>
+                                <ul class="space-y-3">
+                                    <li class="flex items-center gap-2 text-slate-700 font-medium text-sm sm:text-base">
+                                        <i class="fa-solid fa-circle-check text-violet-600 text-sm"></i> <b>GoHighLevel Configurations:</b> Custom subaccounts and visual layouts.
+                                    </li>
+                                    <li class="flex items-center gap-2 text-slate-700 font-medium text-sm sm:text-base">
+                                        <i class="fa-solid fa-circle-check text-violet-600 text-sm"></i> <b>Pipeline Architecture:</b> Custom stages to easily organize and track leads.
+                                    </li>
+                                    <li class="flex items-center gap-2 text-slate-700 font-medium text-sm sm:text-base">
+                                        <i class="fa-solid fa-circle-check text-violet-600 text-sm"></i> <b>Automated Sequences:</b> Strategic SMS and email nurture paths.
+                                    </li>
+                                    <li class="flex items-center gap-2 text-slate-700 font-medium text-sm sm:text-base">
+                                        <i class="fa-solid fa-circle-check text-violet-600 text-sm"></i> <b>Appointment Schedulers:</b> Calendar integrations that automate bookings.
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="lg:order-1 bg-white p-8 rounded-3xl border border-slate-100 shadow-xl space-y-6">
+                                <div class="p-4 bg-violet-50 rounded-xl border border-violet-100">
+                                    <p class="text-xs text-violet-700 font-bold uppercase tracking-wide mb-2">Automated Funnel Preview</p>
+                                    <div class="space-y-2 text-xs">
+                                        <div class="flex items-center justify-between p-2 bg-white rounded border border-slate-100">
+                                            <span>User Submits Web Form</span>
+                                            <span class="text-primary font-bold">Triggered</span>
+                                        </div>
+                                        <div class="flex items-center justify-between p-2 bg-white rounded border border-slate-100">
+                                            <span>Auto-SMS sent: "Hey! Let's talk..."</span>
+                                            <span class="text-violet-600 font-bold">Sent (Instant)</span>
+                                        </div>
+                                        <div class="flex items-center justify-between p-2 bg-white rounded border border-slate-100">
+                                            <span>Check Calendar Status & Notify Admin</span>
+                                            <span class="text-emerald-600 font-bold">Logged</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- AI Solutions Detail -->
+                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                            <div class="space-y-6">
+                                <div class="w-12 h-12 rounded-xl bg-cyan-50 text-accent flex items-center justify-center text-xl font-bold">
+                                    <i class="fa-solid fa-robot"></i>
+                                </div>
+                                <h2 class="text-3xl font-extrabold text-slate-900">Advanced Conversational AI Solutions</h2>
+                                <p class="text-slate-600 leading-relaxed text-sm sm:text-base">
+                                    Integrate smart agents capable of handling natural queries and automating operations 24/7.
+                                </p>
+                                <ul class="space-y-3">
+                                    <li class="flex items-center gap-2 text-slate-700 font-medium text-sm sm:text-base">
+                                        <i class="fa-solid fa-circle-check text-accent text-sm"></i> <b>AI Voice Agents:</b> Direct scheduling and inquiry calls.
+                                    </li>
+                                    <li class="flex items-center gap-2 text-slate-700 font-medium text-sm sm:text-base">
+                                        <i class="fa-solid fa-circle-check text-accent text-sm"></i> <b>Interactive Chatbots:</b> Intelligent conversational answers.
+                                    </li>
+                                    <li class="flex items-center gap-2 text-slate-700 font-medium text-sm sm:text-base">
+                                        <i class="fa-solid fa-circle-check text-accent text-sm"></i> <b>Support Automations:</b> Automated triage and ticket generation.
+                                    </li>
+                                    <li class="flex items-center gap-2 text-slate-700 font-medium text-sm sm:text-base">
+                                        <i class="fa-solid fa-circle-check text-accent text-sm"></i> <b>Lead Qualification Systems:</b> Automated screening before booking.
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="bg-white p-8 rounded-3xl border border-slate-100 shadow-xl space-y-4">
+                                <h3 class="text-lg font-bold text-slate-900">AI Integration Stack We Support</h3>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="px-3 py-1.5 text-xs font-semibold bg-slate-100 text-slate-700 rounded-lg">Vapi AI</span>
+                                    <span class="px-3 py-1.5 text-xs font-semibold bg-slate-100 text-slate-700 rounded-lg">Retell AI</span>
+                                    <span class="px-3 py-1.5 text-xs font-semibold bg-slate-100 text-slate-700 rounded-lg">OpenAI GPT-4o</span>
+                                    <span class="px-3 py-1.5 text-xs font-semibold bg-slate-100 text-slate-700 rounded-lg">Make.com</span>
+                                    <span class="px-3 py-1.5 text-xs font-semibold bg-slate-100 text-slate-700 rounded-lg">ElevenLabs</span>
+                                    <span class="px-3 py-1.5 text-xs font-semibold bg-slate-100 text-slate-700 rounded-lg">Voiceflow</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </section>
+        </div>
+
+        <!-- ======================================================= -->
+        <!-- PORTFOLIO PAGE -->
+        <!-- ======================================================= -->
+        <div id="page-portfolio" class="page-view hidden transition-opacity duration-300">
+            <section class="py-20 bg-slate-50/50">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    
+                    <div class="text-center max-w-3xl mx-auto mb-16">
+                        <p class="text-xs font-bold uppercase tracking-wider text-primary">Case Studies & Deployments</p>
+                        <h1 class="text-4xl sm:text-5xl font-extrabold tracking-tight text-slate-900 mt-2">Our Proven Case Studies</h1>
+                        <p class="mt-4 text-slate-600">Explore real client projects where we designed custom platforms and set up robust CRM systems to drive growth.</p>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        
+                        <!-- Project 1 -->
+                        <div class="bg-white rounded-3xl border border-slate-100 overflow-hidden shadow-sm hover:shadow-xl transition flex flex-col justify-between">
+                            <div class="p-6 sm:p-8 space-y-4">
+                                <span class="text-xs font-bold uppercase bg-blue-50 text-primary px-3 py-1 rounded-full">Web Development</span>
+                                <h2 class="text-xl font-extrabold text-slate-900">Local Service Business Website</h2>
+                                <div class="space-y-3 pt-2 text-sm text-slate-600">
+                                    <p><b>Challenge:</b> Client's legacy website was slow, not mobile-friendly, and losing mobile search traffic.</p>
+                                    <p><b>Solution:</b> Developed a custom, high-speed layout with optimized forms and clean call-to-actions.</p>
+                                    <p class="text-emerald-600"><b>Results:</b> Reduced bounce rates by 40% and improved mobile search traffic conversion by 80%.</p>
+                                </div>
+                            </div>
+                            <div class="px-6 sm:px-8 pb-6 pt-4 border-t border-slate-50 flex flex-wrap gap-1.5">
+                                <span class="text-[10px] font-bold bg-slate-100 text-slate-600 px-2 py-0.5 rounded">React</span>
+                                <span class="text-[10px] font-bold bg-slate-100 text-slate-600 px-2 py-0.5 rounded">Tailwind CSS</span>
+                                <span class="text-[10px] font-bold bg-slate-100 text-slate-600 px-2 py-0.5 rounded">Framer Motion</span>
+                            </div>
+                        </div>
+
+                        <!-- Project 2 -->
+                        <div class="bg-white rounded-3xl border border-slate-100 overflow-hidden shadow-sm hover:shadow-xl transition flex flex-col justify-between">
+                            <div class="p-6 sm:p-8 space-y-4">
+                                <span class="text-xs font-bold uppercase bg-violet-50 text-violet-600 px-3 py-1 rounded-full">AI Solutions</span>
+                                <h2 class="text-xl font-extrabold text-slate-900">Automated AI Voice Agent</h2>
+                                <div class="space-y-3 pt-2 text-sm text-slate-600">
+                                    <p><b>Challenge:</b> High volume of missed inbound calls during peak hours, leading to lost customer inquiries.</p>
+                                    <p><b>Solution:</b> Programmed an intelligent voice bot using Retell AI to answer calls and schedule appointments.</p>
+                                    <p class="text-emerald-600"><b>Results:</b> Reduced unanswered inquiries to zero and saved over 15 hours of phone triage time weekly.</p>
+                                </div>
+                            </div>
+                            <div class="px-6 sm:px-8 pb-6 pt-4 border-t border-slate-50 flex flex-wrap gap-1.5">
+                                <span class="text-[10px] font-bold bg-slate-100 text-slate-600 px-2 py-0.5 rounded">Retell AI</span>
+                                <span class="text-[10px] font-bold bg-slate-100 text-slate-600 px-2 py-0.5 rounded">Twilio</span>
+                                <span class="text-[10px] font-bold bg-slate-100 text-slate-600 px-2 py-0.5 rounded">NodeJS</span>
+                            </div>
+                        </div>
+
+                        <!-- Project 3 -->
+                        <div class="bg-white rounded-3xl border border-slate-100 overflow-hidden shadow-sm hover:shadow-xl transition flex flex-col justify-between">
+                            <div class="p-6 sm:p-8 space-y-4">
+                                <span class="text-xs font-bold uppercase bg-cyan-50 text-accent px-3 py-1 rounded-full">CRM & Automation</span>
+                                <h2 class="text-xl font-extrabold text-slate-900">GoHighLevel CRM Implementation</h2>
+                                <div class="space-y-3 pt-2 text-sm text-slate-600">
+                                    <p><b>Challenge:</b> Leads from Facebook, Instagram, and web forms were disorganized and poorly tracked.</p>
+                                    <p><b>Solution:</b> Designed a unified GHL CRM ecosystem with instant pipeline tracking and SMS notifications.</p>
+                                    <p class="text-emerald-600"><b>Results:</b> Faster initial response times and a 35% boost in booked consultation follow-ups.</p>
+                                </div>
+                            </div>
+                            <div class="px-6 sm:px-8 pb-6 pt-4 border-t border-slate-50 flex flex-wrap gap-1.5">
+                                <span class="text-[10px] font-bold bg-slate-100 text-slate-600 px-2 py-0.5 rounded">GoHighLevel</span>
+                                <span class="text-[10px] font-bold bg-slate-100 text-slate-600 px-2 py-0.5 rounded">Zapier</span>
+                                <span class="text-[10px] font-bold bg-slate-100 text-slate-600 px-2 py-0.5 rounded">Twilio API</span>
+                            </div>
+                        </div>
+
+                        <!-- Project 4 -->
+                        <div class="bg-white rounded-3xl border border-slate-100 overflow-hidden shadow-sm hover:shadow-xl transition flex flex-col justify-between">
+                            <div class="p-6 sm:p-8 space-y-4">
+                                <span class="text-xs font-bold uppercase bg-emerald-50 text-emerald-600 px-3 py-1 rounded-full">Web Development</span>
+                                <h2 class="text-xl font-extrabold text-slate-900">Lead Generation Funnel</h2>
+                                <div class="space-y-3 pt-2 text-sm text-slate-600">
+                                    <p><b>Challenge:</b> Coach was paying for cold traffic that didn't convert through their standard website.</p>
+                                    <p><b>Solution:</b> Designed a dynamic, multi-step funnel with customized questions and automated rewards.</p>
+                                    <p class="text-emerald-600"><b>Results:</b> Improved visitor-to-opt-in conversion to 26% and grew email subscribers.</p>
+                                </div>
+                            </div>
+                            <div class="px-6 sm:px-8 pb-6 pt-4 border-t border-slate-50 flex flex-wrap gap-1.5">
+                                <span class="text-[10px] font-bold bg-slate-100 text-slate-600 px-2 py-0.5 rounded">Tailwind CSS</span>
+                                <span class="text-[10px] font-bold bg-slate-100 text-slate-600 px-2 py-0.5 rounded">JavaScript</span>
+                                <span class="text-[10px] font-bold bg-slate-100 text-slate-600 px-2 py-0.5 rounded">HTML5</span>
+                            </div>
+                        </div>
+
+                        <!-- Project 5 -->
+                        <div class="bg-white rounded-3xl border border-slate-100 overflow-hidden shadow-sm hover:shadow-xl transition flex flex-col justify-between">
+                            <div class="p-6 sm:p-8 space-y-4">
+                                <span class="text-xs font-bold uppercase bg-pink-50 text-pink-600 px-3 py-1 rounded-full">CRM & Automation</span>
+                                <h2 class="text-xl font-extrabold text-slate-900">Appointment Booking Automation</h2>
+                                <div class="space-y-3 pt-2 text-sm text-slate-600">
+                                    <p><b>Challenge:</b> Back-and-forth emails to schedule clients were causing prospects to drop off.</p>
+                                    <p><b>Solution:</b> Set up automated booking sequences and reminders linked to Google Calendar.</p>
+                                    <p class="text-emerald-600"><b>Results:</b> Reduced calendar booking friction and cut consultation no-shows by 70%.</p>
+                                </div>
+                            </div>
+                            <div class="px-6 sm:px-8 pb-6 pt-4 border-t border-slate-50 flex flex-wrap gap-1.5">
+                                <span class="text-[10px] font-bold bg-slate-100 text-slate-600 px-2 py-0.5 rounded">Calendar API</span>
+                                <span class="text-[10px] font-bold bg-slate-100 text-slate-600 px-2 py-0.5 rounded">Make.com</span>
+                                <span class="text-[10px] font-bold bg-slate-100 text-slate-600 px-2 py-0.5 rounded">GHL API</span>
+                            </div>
+                        </div>
+
+                        <!-- Project 6 -->
+                        <div class="bg-white rounded-3xl border border-slate-100 overflow-hidden shadow-sm hover:shadow-xl transition flex flex-col justify-between">
+                            <div class="p-6 sm:p-8 space-y-4">
+                                <span class="text-xs font-bold uppercase bg-amber-50 text-amber-600 px-3 py-1 rounded-full">Digital Growth</span>
+                                <h2 class="text-xl font-extrabold text-slate-900">Social Media Growth Campaign</h2>
+                                <div class="space-y-3 pt-2 text-sm text-slate-600">
+                                    <p><b>Challenge:</b> Local clinic had minimal local visibility and struggled to attract younger patients.</p>
+                                    <p><b>Solution:</b> Launched a targeted localized reach campaign with automated chat workflows.</p>
+                                    <p class="text-emerald-600"><b>Results:</b> Grew social media profile views by 150% and generated 45 booked consultations.</p>
+                                </div>
+                            </div>
+                            <div class="px-6 sm:px-8 pb-6 pt-4 border-t border-slate-50 flex flex-wrap gap-1.5">
+                                <span class="text-[10px] font-bold bg-slate-100 text-slate-600 px-2 py-0.5 rounded">ManyChat</span>
+                                <span class="text-[10px] font-bold bg-slate-100 text-slate-600 px-2 py-0.5 rounded">Meta Suite</span>
+                                <span class="text-[10px] font-bold bg-slate-100 text-slate-600 px-2 py-0.5 rounded">Canva Pro</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- ======================================================= -->
+        <!-- ABOUT PAGE -->
+        <!-- ======================================================= -->
+        <div id="page-about" class="page-view hidden transition-opacity duration-300">
+            <section class="py-20 bg-white">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    
+                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                        <div class="lg:col-span-7 space-y-6">
+                            <p class="text-xs font-bold uppercase tracking-wider text-primary">Our Story & Mission</p>
+                            <h1 class="text-4xl sm:text-5xl font-extrabold tracking-tight text-slate-900">
+                                Helping Businesses Work Smarter, Not Harder
+                            </h1>
+                            <p class="text-lg text-slate-600 leading-relaxed">
+                                StartupBae was created to help businesses simplify operations, improve customer experiences, and increase revenue through modern web design and automation.
+                            </p>
+                            <p class="text-slate-600 leading-relaxed text-sm sm:text-base">
+                                We believe that advanced digital systems shouldn't just be for massive enterprise corporations. By keeping our team agile, lean, and technical, we build powerful websites, smart AI voice agents, and high-performance GoHighLevel pipelines that are easy to use and scale.
+                            </p>
+                            <div class="p-6 bg-slate-50 border-l-4 border-primary rounded-r-xl">
+                                <p class="text-sm text-slate-700 italic font-medium">
+                                    "Our core mission is to make robust automation tools and conversion-focused web layouts highly accessible and easy to deploy for growing businesses worldwide."
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Graphical core values layout -->
+                        <div class="lg:col-span-5 bg-slate-50 p-8 rounded-3xl border border-slate-100 space-y-6">
+                            <h2 class="text-xl font-bold text-slate-900 mb-2">Our Operating Core Values</h2>
+                            
+                            <div class="space-y-4">
+                                <div class="bg-white p-4 rounded-xl shadow-sm border border-slate-100">
+                                    <h3 class="font-bold text-slate-900 text-sm sm:text-base">Innovation</h3>
+                                    <p class="text-xs sm:text-sm text-slate-500 mt-0.5">We use modern developer APIs, framework structures, and smart AI platforms to build fast, robust integrations.</p>
+                                </div>
+                                <div class="bg-white p-4 rounded-xl shadow-sm border border-slate-100">
+                                    <h3 class="font-bold text-slate-900 text-sm sm:text-base">Simplicity</h3>
+                                    <p class="text-xs sm:text-sm text-slate-500 mt-0.5">We build clean databases, straightforward booking workflows, and easy-to-use CRM dashboards.</p>
+                                </div>
+                                <div class="bg-white p-4 rounded-xl shadow-sm border border-slate-100">
+                                    <h3 class="font-bold text-slate-900 text-sm sm:text-base">Transparency</h3>
+                                    <p class="text-xs sm:text-sm text-slate-500 mt-0.5">We give honest recommendations on what you actually need to automate, with no unexpected fees or extra services.</p>
+                                </div>
+                                <div class="bg-white p-4 rounded-xl shadow-sm border border-slate-100">
+                                    <h3 class="font-bold text-slate-900 text-sm sm:text-base">Results-Driven</h3>
+                                    <p class="text-xs sm:text-sm text-slate-500 mt-0.5">Every layout structure, automated text follow-up, and design update is built to help convert leads into sales.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+        </div>
+
+        <!-- ======================================================= -->
+        <!-- CONTACT PAGE -->
+        <!-- ======================================================= -->
+        <div id="page-contact" class="page-view hidden transition-opacity duration-300">
+            <section class="py-20 bg-slate-50/50">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    
+                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                        <!-- Left Details Column -->
+                        <div class="lg:col-span-5 space-y-6">
+                            <p class="text-xs font-bold uppercase tracking-wider text-primary">Get In Touch</p>
+                            <h1 class="text-4xl font-extrabold tracking-tight text-slate-900">Schedule a Free Strategy Call</h1>
+                            <p class="text-slate-600 leading-relaxed text-sm sm:text-base">
+                                Let's discuss your current systems and map out how web development, lead nurturing pipelines, or smart AI agents can save your team hours of work.
+                            </p>
+                            
+                            <!-- WhatsApp and direct numbers -->
+                            <div class="space-y-4 pt-4">
+                                <a href="https://wa.me/919740326160" target="_blank" rel="noopener" class="flex items-center gap-4 p-4 bg-emerald-50 border border-emerald-100 hover:bg-emerald-100 rounded-2xl transition duration-200">
+                                    <div class="w-12 h-12 rounded-xl bg-emerald-500 text-white flex items-center justify-center text-2xl">
+                                        <i class="fab fa-whatsapp"></i>
+                                    </div>
+                                    <div>
+                                        <p class="text-xs text-emerald-700 font-bold uppercase tracking-wider">Quick WhatsApp Support</p>
+                                        <p class="text-base font-extrabold text-emerald-900">+91 97403 26160</p>
+                                    </div>
+                                </a>
+                                <div class="flex items-center gap-4 p-4 bg-white border border-slate-100 rounded-2xl">
+                                    <div class="w-12 h-12 rounded-xl bg-primary text-white flex items-center justify-center text-xl">
+                                        <i class="fa-solid fa-envelope"></i>
+                                    </div>
+                                    <div>
+                                        <p class="text-xs text-slate-500 font-bold uppercase tracking-wider">Direct Email Address</p>
+                                        <p class="text-base font-extrabold text-slate-800">grow@startupbae.agency</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Contact Form Container -->
+                        <div class="lg:col-span-7">
+                            <div class="bg-white p-8 sm:p-10 rounded-3xl border border-slate-100 shadow-xl">
+                                <h2 class="text-xl font-bold text-slate-900 mb-6">Send Us a Direct Message</h2>
+                                
+                                <form id="agency-contact-form" onsubmit="handleFormSubmit(event)" class="space-y-4">
+                                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                        <div>
+                                            <label class="block text-xs font-bold uppercase text-slate-500 mb-1">Your Full Name</label>
+                                            <input type="text" required name="name" class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary text-sm bg-slate-50" placeholder="John Doe">
+                                        </div>
+                                        <div>
+                                            <label class="block text-xs font-bold uppercase text-slate-500 mb-1">Email Address</label>
+                                            <input type="email" required name="email" class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary text-sm bg-slate-50" placeholder="john@example.com">
+                                        </div>
+                                    </div>
+                                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                        <div>
+                                            <label class="block text-xs font-bold uppercase text-slate-500 mb-1">Phone Number</label>
+                                            <input type="tel" required name="phone" class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary text-sm bg-slate-50" placeholder="+91 97403 26160">
+                                        </div>
+                                        <div>
+                                            <label class="block text-xs font-bold uppercase text-slate-500 mb-1">Company Name</label>
+                                            <input type="text" name="company" class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary text-sm bg-slate-50" placeholder="Acme Corp">
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <label class="block text-xs font-bold uppercase text-slate-500 mb-1">Service of Interest</label>
+                                        <select name="service" class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary text-sm bg-slate-50 text-slate-700">
+                                            <option value="Web Development">Premium Web Development</option>
+                                            <option value="CRM Automation">CRM & GoHighLevel Setup</option>
+                                            <option value="AI Solutions">AI Solutions & Chatbots</option>
+                                            <option value="Digital Growth">Digital Growth Campaigns</option>
+                                            <option value="Unsure">Other / Help Me Choose</option>
+                                        </select>
+                                    </div>
+                                    <div>
+                                        <label class="block text-xs font-bold uppercase text-slate-500 mb-1">Your Message</label>
+                                        <textarea required name="message" rows="4" class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary text-sm bg-slate-50" placeholder="Briefly describe what you would like to automate or build..."></textarea>
+                                    </div>
+                                    <button type="submit" class="w-full py-4 rounded-xl text-white font-bold gradient-bg shadow-lg shadow-blue-500/20 hover:shadow-blue-500/40 transition">
+                                        Submit Request
+                                    </button>
+                                </form>
+                                <div id="form-success-alert" class="hidden mt-4 p-4 bg-emerald-50 border border-emerald-200 text-emerald-800 rounded-xl text-center text-sm font-semibold">
+                                    <i class="fa-solid fa-circle-check mr-2"></i> Message sent successfully! We will get in touch shortly.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+        </div>
+
+        <!-- ======================================================= -->
+        <!-- PRIVACY POLICY PAGE -->
+        <!-- ======================================================= -->
+        <div id="page-privacy" class="page-view hidden transition-opacity duration-300">
+            <section class="py-20 bg-white">
+                <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
+                    <h1 class="text-3xl font-extrabold text-slate-900 border-b pb-4">Privacy Policy</h1>
+                    <p class="text-slate-500 text-xs">Last Updated: June 13, 2026</p>
+                    
+                    <div class="space-y-6 text-slate-600 text-sm sm:text-base leading-relaxed">
+                        <p>At StartupBae, accessible from startupbae.agency, safeguarding the privacy of our visitors is one of our primary commitments. This Privacy Policy outlines the types of information we collect and how we utilize it.</p>
+                        
+                        <h2 class="text-xl font-bold text-slate-900 pt-4">1. Information Collection</h2>
+                        <p>We collect direct, personal information when you contact us or submit an inquiry through our forms. This includes details like your full name, email address, telephone number, business name, and any specific messages you share.</p>
+
+                        <h2 class="text-xl font-bold text-slate-900 pt-4">2. Use of Information</h2>
+                        <p>The operational data we collect is utilized exclusively to provide, maintain, and optimize our professional web, CRM setup, and AI automation services. Specifically, we use it to contact you regarding your inquiries, handle scheduling, and deliver tailored project estimations.</p>
+
+                        <h2 class="text-xl font-bold text-slate-900 pt-4">3. Cookies & Tracking</h2>
+                        <p>StartupBae uses standard cookies and basic analytical tracking configurations to monitor website interactions, page speeds, and user journeys. This helps us ensure optimal performance and responsive layout behaviors.</p>
+
+                        <h2 class="text-xl font-bold text-slate-900 pt-4">4. Data Security</h2>
+                        <p>We deploy modern encryption techniques to secure database entries, preventing unauthorized disclosures or alterations. Access to sensitive contact data is restricted to certified project managers.</p>
+
+                        <h2 class="text-xl font-bold text-slate-900 pt-4">5. Third-Party Services</h2>
+                        <p>We link with trusted external automation layers, including Make.com, GoHighLevel CRM, and API nodes, solely to complete your projects and sync communication. We do not sell or trade your information with unauthorized advertisers.</p>
+
+                        <h2 class="text-xl font-bold text-slate-900 pt-4">6. Your Rights</h2>
+                        <p>You have the right to request access to the information we hold about you, ask for corrections, or request complete deletion. To exercise these rights, please contact our support team at grow@startupbae.agency.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- ======================================================= -->
+        <!-- TERMS OF SERVICE PAGE -->
+        <!-- ======================================================= -->
+        <div id="page-terms" class="page-view hidden transition-opacity duration-300">
+            <section class="py-20 bg-white">
+                <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
+                    <h1 class="text-3xl font-extrabold text-slate-900 border-b pb-4">Terms of Service</h1>
+                    <p class="text-slate-500 text-xs">Last Updated: June 13, 2026</p>
+                    
+                    <div class="space-y-6 text-slate-600 text-sm sm:text-base leading-relaxed">
+                        <p>Welcome to StartupBae. By accessing or utilizing our digital, CRM setup, website, or AI automation consulting services, you agree to comply with the terms set forth below.</p>
+                        
+                        <h2 class="text-xl font-bold text-slate-900 pt-4">1. Our Services</h2>
+                        <p>StartupBae provides modern web design, GoHighLevel CRM setup, automated workflow configuration, and conversational AI integrations. All deliverables are outlined in writing before we begin development.</p>
+
+                        <h2 class="text-xl font-bold text-slate-900 pt-4">2. Payments & Fees</h2>
+                        <p>Fees for our services are detailed on a project-by-project basis in our customized proposals. Standard custom setups require a deposit upfront, with the remaining balance due upon successful launch.</p>
+
+                        <h2 class="text-xl font-bold text-slate-900 pt-4">3. Refund Policy</h2>
+                        <p>Due to the custom nature of our design work, coding, and API integrations, refunds are not issued once development has begun on a project. We collaborate closely with you through active previews to ensure all requirements are met.</p>
+
+                        <h2 class="text-xl font-bold text-slate-900 pt-4">4. Intellectual Property</h2>
+                        <p>Upon receipt of final payment, ownership of all website code, database structures, and configured pipelines is fully transferred to your business. StartupBae retains the right to display high-level mockups in our portfolio.</p>
+
+                        <h2 class="text-xl font-bold text-slate-900 pt-4">5. User Responsibilities</h2>
+                        <p>You are responsible for providing the necessary content, images, domain access, and credentials to complete your project. Any delay in receiving these assets may affect the project timeline.</p>
+
+                        <h2 class="text-xl font-bold text-slate-900 pt-4">6. Limitation of Liability</h2>
+                        <p>StartupBae is not liable for any third-party API changes, changes to CRM platforms, search engine ranking shifts, or lost database information that occurs after our 30-day post-launch support period ends.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-slate-900 text-slate-400 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-10">
+                
+                <!-- Col 1: Brand Info -->
+                <div class="md:col-span-4 space-y-4">
+                    <span class="text-2xl font-extrabold tracking-tight text-white cursor-pointer" onclick="navigateTo('home')">
+                        Startup<span class="text-primary">Bae</span><span class="text-accent">.</span>
+                    </span>
+                    <p class="text-sm text-slate-400 leading-relaxed max-w-sm">
+                        Helping businesses simplify operations, improve customer experiences, and increase revenue through custom websites, CRM setups, and smart AI workflows.
+                    </p>
+                    <!-- Social icons -->
+                    <div class="flex gap-4 pt-2">
+                        <a href="https://wa.me/919740326160" target="_blank" rel="noopener" class="w-8 h-8 rounded-full bg-slate-800 hover:bg-emerald-600 hover:text-white flex items-center justify-center transition" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" class="w-8 h-8 rounded-full bg-slate-800 hover:bg-blue-600 hover:text-white flex items-center justify-center transition" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="w-8 h-8 rounded-full bg-slate-800 hover:bg-sky-500 hover:text-white flex items-center justify-center transition" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+
+                <!-- Col 2: Navigation Links -->
+                <div class="md:col-span-2 space-y-3">
+                    <h4 class="text-sm font-bold text-white uppercase tracking-wider">Navigation</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="javascript:void(0)" onclick="navigateTo('home')" class="hover:text-white transition">Home</a></li>
+                        <li><a href="javascript:void(0)" onclick="navigateTo('services')" class="hover:text-white transition">Services</a></li>
+                        <li><a href="javascript:void(0)" onclick="navigateTo('portfolio')" class="hover:text-white transition">Portfolio</a></li>
+                        <li><a href="javascript:void(0)" onclick="navigateTo('about')" class="hover:text-white transition">About Us</a></li>
+                        <li><a href="javascript:void(0)" onclick="navigateTo('contact')" class="hover:text-white transition">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3: Services Links -->
+                <div class="md:col-span-3 space-y-3">
+                    <h4 class="text-sm font-bold text-white uppercase tracking-wider">Services</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="javascript:void(0)" onclick="navigateTo('services')" class="hover:text-white transition">Web Development</a></li>
+                        <li><a href="javascript:void(0)" onclick="navigateTo('services')" class="hover:text-white transition">CRM Setup & Automation</a></li>
+                        <li><a href="javascript:void(0)" onclick="navigateTo('services')" class="hover:text-white transition">AI Agent Integrations</a></li>
+                        <li><a href="javascript:void(0)" onclick="navigateTo('services')" class="hover:text-white transition">Digital Growth</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 4: Contact Info Details -->
+                <div class="md:col-span-3 space-y-3">
+                    <h4 class="text-sm font-bold text-white uppercase tracking-wider">Contact Us</h4>
+                    <ul class="space-y-2 text-sm text-slate-400">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-phone text-accent"></i> +91 97403 26160</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-envelope text-accent"></i> grow@startupbae.agency</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-location-dot text-accent"></i> Bengaluru, India</li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- Footer Bottom legal links -->
+            <div class="mt-12 pt-8 border-t border-slate-800 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
+                <p>&copy; 2026 StartupBae. All rights reserved.</p>
+                <div class="flex gap-6">
+                    <a href="javascript:void(0)" onclick="navigateTo('privacy')" class="hover:text-white transition">Privacy Policy</a>
+                    <a href="javascript:void(0)" onclick="navigateTo('terms')" class="hover:text-white transition">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- STICKY WHATSAPP BUTTON -->
+    <a href="https://wa.me/919740326160" target="_blank" rel="noopener" class="fixed bottom-6 right-6 z-50 bg-emerald-500 hover:bg-emerald-600 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-2xl transition-all transform hover:scale-110 group" aria-label="WhatsApp Contact">
+        <i class="fab fa-whatsapp text-3xl"></i>
+        <span class="absolute right-16 bg-slate-900 text-white text-xs font-bold px-3 py-1.5 rounded-lg shadow-md whitespace-nowrap opacity-0 group-hover:opacity-100 transition-all">Chat with StartupBae</span>
+    </a>
+
+    <!-- JAVASCRIPT LOGIC -->
+    <script>
+        // Simple Single Page App Router
+        function navigateTo(pageId) {
+            // Hide all pages
+            const pages = document.querySelectorAll('.page-view');
+            pages.forEach(page => page.classList.add('hidden'));
+
+            // Show current page
+            const selectedPage = document.getElementById(`page-${pageId}`);
+            if (selectedPage) {
+                selectedPage.classList.remove('hidden');
+                // Scroll to top
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            }
+
+            // Update Navigation Menu Visuals (Desktop)
+            const navLinks = document.querySelectorAll('header nav a');
+            navLinks.forEach(link => link.classList.remove('active-nav-link'));
+            const activeLink = document.getElementById(`nav-${pageId}`);
+            if (activeLink) {
+                activeLink.classList.add('active-nav-link');
+            }
+
+            // Close Mobile Menu if open
+            const mobileMenu = document.getElementById('mobile-menu');
+            const menuIcon = document.getElementById('menu-icon');
+            mobileMenu.classList.add('hidden');
+            menuIcon.className = 'fa-solid fa-bars text-2xl';
+        }
+
+        // Toggle Mobile Menu Open/Close
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        mobileMenuBtn.addEventListener('click', () => {
+            const mobileMenu = document.getElementById('mobile-menu');
+            const menuIcon = document.getElementById('menu-icon');
+            if (mobileMenu.classList.contains('hidden')) {
+                mobileMenu.classList.remove('hidden');
+                menuIcon.className = 'fa-solid fa-xmark text-2xl';
+            } else {
+                mobileMenu.classList.add('hidden');
+                menuIcon.className = 'fa-solid fa-bars text-2xl';
+            }
+        });
+
+        // FAQ accordion click toggles
+        function toggleFaq(faqId) {
+            const faqContainer = document.getElementById(faqId);
+            const icon = document.getElementById(`faq-icon-${faqId}`);
+            
+            if (faqContainer.classList.contains('hidden')) {
+                faqContainer.classList.remove('hidden');
+                icon.style.transform = 'rotate(180deg)';
+            } else {
+                faqContainer.classList.add('hidden');
+                icon.style.transform = 'rotate(0deg)';
+            }
+        }
+
+        // ROI Calculator Dynamic Calculation
+        function updateCalculator() {
+            const teamSize = parseInt(document.getElementById('team-slider').value);
+            const laborCost = parseInt(document.getElementById('wage-slider').value);
+            
+            document.getElementById('team-value').innerText = teamSize;
+            document.getElementById('wage-value').innerText = laborCost;
+
+            // Simple Estimation Logic (e.g., 40 hours saved per team member per month)
+            const hoursSaved = teamSize * 40;
+            const savings = hoursSaved * laborCost;
+
+            document.getElementById('calc-hours').innerText = hoursSaved.toLocaleString();
+            document.getElementById('calc-savings').innerText = savings.toLocaleString();
+        }
+
+        // Contact Form Response Handling
+        function handleFormSubmit(event) {
+            event.preventDefault();
+            const form = event.target;
+            const successAlert = document.getElementById('form-success-alert');
+            
+            // Highlight success state
+            successAlert.classList.remove('hidden');
+            form.reset();
+
+            // Clear success alert automatically after 5 seconds
+            setTimeout(() => {
+                successAlert.classList.add('hidden');
+            }, 5000);
+        }
+
+        // Initialize state
+        window.onload = function() {
+            updateCalculator();
+        }
+    </script>
+
+</body>
+</html>
